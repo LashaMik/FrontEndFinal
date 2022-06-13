@@ -1,0 +1,107 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lashas Flowers</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+      <div class="topnav">
+        <a href="index.html" id="link1">მთავარი</a>
+        <a class="active" href="shesaxeb.html" id="link2">ჩვენს შესახებ</a>
+        <a href="galerea.html" id="link3">გალერეა</a>
+        <a href="kontakti.html" id="link4">კონტაქტი</a>
+        <a href="kalata.html" id="link5">ჩემი კალათა</a>
+        <a href="login.html" id="link6">ავტორიზაცია</a>
+        <a href="registracia.html" id="link7">რეგისტრაცია</a>
+        <button onclick="Translate1()">English</button>
+        <button onclick="Translate2()">Georgian</button> 
+
+      </div>
+        <section class="shesaxeb">
+            <div
+                class="shesaxeb_foto"
+                style="
+                    background-image: url('img/shesaxeb.jpg');
+                "
+            >
+                <div class="shesaxeb_satauri">
+                    <div id="Shesaxeb1">
+                        ჩვენს შესახებ
+                    </div>
+                </div>
+            </div>
+            <div class="container"></div>
+            <p style="font-size: 3em;" id="Shesaxeb2">მოგესალმებით, გმადლობთ რომ დაინტერესდით ჩვენი ყვავილების საიტით. აქ შეგიძლით იხილოთ უამრავი ასორტიმენტის 
+                ყვავილები, მათი აქსესუარები და სხვა. გვაქვს, როგორც ადგილზე ყიდვის საშუალება, ასევე კურიერის სერვისი. ჩვენ ვაპირებთ მრავალ ადგილას გახსნას
+                და მეტი პროდუქციის შემოთავაზების ჩვენი მომხმარებლებისათვის. კითხვების შემთსვევაში მოგვმართეთ და დიდი მადლობა ჩვენთან შოპინგისთვის!
+            </dolore></p>
+        </section>
+
+
+        <script>
+
+function Translate2(){
+            localStorage.setItem("link1", "მთავარი");
+            document.getElementById("link1").innerHTML = localStorage.getItem("link1");
+            localStorage.setItem("link2", "ჩვენს შესახებ");
+            document.getElementById("link2").innerHTML = localStorage.getItem("link2");
+            localStorage.setItem("link3", "გალერეა");
+            document.getElementById("link3").innerHTML = localStorage.getItem("link3");
+            localStorage.setItem("link4", "კონტაქტი");
+            document.getElementById("link4").innerHTML = localStorage.getItem("link4");
+            localStorage.setItem("link5", "ჩემი კალათა");
+            document.getElementById("link5").innerHTML = localStorage.getItem("link5");
+            localStorage.setItem("link6", "ავტორიზაცია");
+            document.getElementById("link6").innerHTML = localStorage.getItem("link6");
+            localStorage.setItem("link7", "რეგისტრაცია");
+            document.getElementById("link7").innerHTML = localStorage.getItem("link7");
+
+            localStorage.setItem("Shesaxeb1", "ჩვენს შესახებ");
+            document.getElementById("Shesaxeb1").innerHTML = localStorage.getItem("Shesaxeb1");
+            localStorage.setItem("Shesaxeb2", "მოგესალმებით, გმადლობთ რომ დაინტერესდით ჩვენი ყვავილების საიტით. აქ შეგიძლით იხილოთ უამრავი ასორტიმენტის ყვავილები, მათი აქსესუარები და სხვა. გვაქვს, როგორც ადგილზე ყიდვის საშუალება, ასევე კურიერის სერვისი. ჩვენ ვაპირებთ მრავალ ადგილას გახსნას და მეტი პროდუქციის შემოთავაზების ჩვენი მომხმარებლებისათვის. კითხვების შემთსვევაში მოგვმართეთ და დიდი მადლობა ჩვენთან შოპინგისთვის!")
+            document.getElementById("Shesaxeb2").innerHTML = localStorage.getItem("Shesaxeb2");
+
+
+
+
+
+}
+
+function Translate1(){
+            localStorage.setItem("link1", "Main");
+            document.getElementById("link1").innerHTML = localStorage.getItem("link1");
+            localStorage.setItem("link2", "About Us");
+            document.getElementById("link2").innerHTML = localStorage.getItem("link2");
+            localStorage.setItem("link3", "Gallery");
+            document.getElementById("link3").innerHTML = localStorage.getItem("link3");
+            localStorage.setItem("link4", "Contact Us");
+            document.getElementById("link4").innerHTML = localStorage.getItem("link4");
+            localStorage.setItem("link5", "My Cart");
+            document.getElementById("link5").innerHTML = localStorage.getItem("link5");
+            localStorage.setItem("link6", "Login");
+            document.getElementById("link6").innerHTML = localStorage.getItem("link6");
+            localStorage.setItem("link7", "Registration");
+            document.getElementById("link7").innerHTML = localStorage.getItem("link7");
+
+            localStorage.setItem("Shesaxeb1", "About Us");
+            document.getElementById("Shesaxeb1").innerHTML = localStorage.getItem("Shesaxeb1");
+            localStorage.setItem("Shesaxeb2", "Hello, thank you for your interest in our flower Website. Here you can find lots of assortmentFlowers, their accessories and more. We have on-site purchase as well as courier service. We are going to open in many places And have more products to offer our customers. If you have any questions, please contact us and thank you for shopping with us!");
+            document.getElementById("Shesaxeb2").innerHTML = localStorage.getItem("Shesaxeb2");
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

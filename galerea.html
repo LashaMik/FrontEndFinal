@@ -1,0 +1,94 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lashas Flowers</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+      <div class="topnav">
+        <a href="index.html" id="link1">მთავარი</a>
+        <a href="shesaxeb.html" id="link2">ჩვენს შესახებ</a>
+        <a class="active" href="galerea.html" id="link3">გალერეა</a>
+        <a href="kontakti.html" id="link4">კონტაქტი</a>
+        <a href="kalata.html" id="link5">ჩემი კალათა</a>
+        <a href="login.html" id="link6">ავტორიზაცია</a>
+        <a href="registracia.html" id="link7">რეგისტრაცია</a>
+        <button onclick="Translate1()">English</button>
+        <button onclick="Translate2()">Georgian</button> 
+      </div>
+      <div class="container">
+
+        <h1 class="heading" id="Galerea1">ჩვენი ყვავილების გალერეა</h1>
+    
+        <div class="gallery">
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="img/produkcia/1.jpg">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="img/produkcia/2.jpg">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="img/produkcia/3.jpg">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="img/produkcia/4.jpg">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="img/produkcia/5.jpg">
+            </div>
+    
+            <div class="gallery-item">
+                <img class="gallery-image" src="img/produkcia/6.jpg">
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <script>
+        function Translate1(){
+            localStorage.setItem("link1", "Main");
+            document.getElementById("link1").innerHTML = localStorage.getItem("link1");
+            localStorage.setItem("link2", "About Us");
+            document.getElementById("link2").innerHTML = localStorage.getItem("link2");
+            localStorage.setItem("link3", "Gallery");
+            document.getElementById("link3").innerHTML = localStorage.getItem("link3");
+            localStorage.setItem("link4", "Contact Us");
+            document.getElementById("link4").innerHTML = localStorage.getItem("link4");
+            localStorage.setItem("link5", "My Cart");
+            document.getElementById("link5").innerHTML = localStorage.getItem("link5");
+            localStorage.setItem("link6", "Login");
+            document.getElementById("link6").innerHTML = localStorage.getItem("link6");
+            localStorage.setItem("link7", "Registration");
+            document.getElementById("link7").innerHTML = localStorage.getItem("link7");
+            localStorage.setItem("Galerea1", "Our Flower Gallery");
+            document.getElementById("Galerea1").innerHTML = localStorage.getItem("Galerea1");
+        }
+
+        function Translate2(){
+            localStorage.setItem("link1", "მთავარი");
+            document.getElementById("link1").innerHTML = localStorage.getItem("link1");
+            localStorage.setItem("link2", "ჩვენს შესახებ");
+            document.getElementById("link2").innerHTML = localStorage.getItem("link2");
+            localStorage.setItem("link3", "გალერეა");
+            document.getElementById("link3").innerHTML = localStorage.getItem("link3");
+            localStorage.setItem("link4", "კონტაქტი");
+            document.getElementById("link4").innerHTML = localStorage.getItem("link4");
+            localStorage.setItem("link5", "ჩემი კალათა");
+            document.getElementById("link5").innerHTML = localStorage.getItem("link5");
+            localStorage.setItem("link6", "ავტორიზაცია");
+            document.getElementById("link6").innerHTML = localStorage.getItem("link6");
+            localStorage.setItem("link7", "რეგისტრაცია");
+            document.getElementById("link7").innerHTML = localStorage.getItem("link7");
+            localStorage.setItem("Galerea1", "ჩვენი ყვავილების გალერეა");
+            document.getElementById("Galerea1").innerHTML = localStorage.getItem("Galerea1");
+        }
+    </script>
+    </body>
+</html>

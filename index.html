@@ -1,0 +1,377 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lashas Flowers</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+      <div class="topnav">
+        <a class="active" href="index.html" id="link1">მთავარი</a>
+        <a href="shesaxeb.html" id="link2">ჩვენს შესახებ</a>
+        <a href="galerea.html" id="link3">გალერეა</a>
+        <a href="kontakti.html" id="link4">კონტაქტი</a>
+        <a href="kalata.html" id="link5">ჩემი კალათა</a>
+        <a href="login.html" id="link6">ავტორიზაცია</a>
+        <a href="registracia.html" id="link7">რეგისტრაცია</a>
+        <button onclick="Translate1()">English</button>
+        <button onclick="Translate2()">Georgian</button> 
+      </div>
+        <section class="categories">
+            <div
+                class="category-item"
+                style="background-image: url('img/kategoriebi/taiguli.jpg');"
+            >
+                <div class="category-item-inner">
+                    <div id="Mtavari1">
+                        თაიგულები
+                    </div>
+                </div>
+            </div>
+            <div
+            class="category-item"
+            style="background-image: url('img/kategoriebi/sasachuqre.jpg');"
+        >
+            <div class="category-item-inner">
+                <div id="Mtavari2">
+                    სასაჩუქრე
+                </div>
+            </div>
+        </div>
+            <div
+                class="category-item"
+                style="background-image: url('img/kategoriebi/kompozicia.jpg');"
+            >
+                <div class="category-item-inner">
+                    <div id="Mtavari3">
+                        კომპოზიციები
+                    </div>
+                </div>
+            </div>
+            <div
+                class="category-item"
+                style="background-image: url('img/kategoriebi/saritualo.jpg');"
+            >
+                <div class="category-item-inner">
+                    <div id="Mtavari4">
+                        საქორწილე
+                    </div>
+                </div>
+            </div>
+            <div
+                class="category-item"
+                style="
+                    background-image: url('img/kategoriebi/blogi.jpg');
+                "
+            >
+                <div class="category-item-inner">
+                    <div id="Mtavari5">
+                        ბლოგი
+                    </div>
+                </div>
+            </div>
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+        <h2 class="featured-products-title" id="Mtavari6" >
+           პოპულარული პროდუქცია
+        </h2>
+        <section class="featured-products">
+            <div class="featured-product-item">
+                <div
+                    style="background-image: url('img/produkcia/1.jpg');"
+                    class="featured-product-item-image"
+                ></div>
+                <p class="title" id="Mtavari7">
+                  ვარდები ორ ფერში
+                </p>
+                <p class="description" id="Mtavari8">
+                  თეთრი და წითელი ვარდები
+                  რაოდენობა 35 ცალი
+                </p>
+                <p class="price" id="Mtavari9">
+                  385₾ 
+                </p>
+                <button id="Mtavari10">
+                    ყიდვა
+                </button>
+            </div>
+            <div class="featured-product-item">
+                <div
+                    style="background-image: url('img/produkcia/2.jpg');"
+                    class="featured-product-item-image"
+                ></div>
+                <p class="title" id="Mtavari11">
+                  ვარდების მრგვალი თაიგული
+                </p>
+                <p class="description" id="Mtavari12">
+                  უმაღლესი ხარისხის წითელი ვარდების თაიგული
+                  რაოდენობა 60ცალი
+                  შეფუთვა: ევროპული ფერადი კრაფტი
+                </p>
+                <p class="price" id="Mtavari13">
+                  600₾
+                </p>
+                <button id="Mtavari14">
+                    ყიდვა
+                </button>
+            </div>
+            <div class="featured-product-item">
+                <div
+                    style="background-image: url('img/produkcia/3.jpg');"
+                    class="featured-product-item-image"
+                ></div>
+                <p class="title" id="Mtavari15">
+                  ყვავილების მიქსი გულის ფორმაში
+                </p>
+                <p class="description" id="Mtavari16">
+                  საუკეთესო ხარისხის ჰოლანდიური ყვავილების მიქსი გულის ფორმის ხის ბრენდირებულ კოლოფში
+
+                </p>
+                <p class="price" id="Mtavari17">
+                  190₾
+                </p>
+                <button id="Mtavari18">
+                    ყიდვა
+                </button>
+            </div>
+            <div class="featured-product-item">
+                <div
+                    style="background-image: url('img/produkcia/4.jpg');"
+                    class="featured-product-item-image"
+                ></div>
+                <p class="title" id="Mtavari19">
+                  ორქიდეა და ქრიზანთემა
+                </p>
+                <p class="description" id="Mtavari20">
+                  ორქიდეის კომპოზიცია ვარდებთან და ქრიზანთემებთან  ერთად
+                </p>
+                <p class="price" id="Mtavari21">
+                   180₾
+                </p>
+                <button id="Mtavari22">
+                    ყიდვა
+                </button>
+            </div>
+            <div class="featured-product-item">
+                <div
+                    style="background-image: url('img/produkcia/5.jpg');"
+                    class="featured-product-item-image"
+                ></div>
+                <p class="title" id="Mtavari23">
+                  ორქიდეა ჰოლანდიური ვარდებით
+                </p>
+                <p class="description" id="Mtavari24">
+                  ჰოლანდიური ორქიდეა და ვარდები ხის ბრენდირებულ კოლოფში
+                </p>
+                <p class="price" id="Mtavari25">
+                  280₾
+                </p>
+                <button id="Mtavari26">
+                    ყიდვა
+                </button>
+            </div>
+            <div class="featured-product-item">
+                <div
+                    style="background-image: url('img/produkcia/6.jpg');"
+                    class="featured-product-item-image"
+                ></div>
+                <p class="title" id="Mtavari27">
+                  ვარდები ტკბილეულით
+                </p>
+                <p class="description" id="Mtavari28">
+                  “Ferrero Rocher”- შოკოლადებით დაწერილი ინიციალი
+                </p>
+                <p class="price" id="Mtavari29">
+                  408₾
+                </p>
+                <button id="Mtavari30">
+                    ყიდვა
+                </button>
+            </div>
+        </section>
+
+        <script>
+            
+            let Slidechar = 1;
+            Slider(Slidechar);
+            function plusSlides(x) {
+              Slider(Slidechar += x);
+            }
+          function Slider() {
+            let i;
+            let slides = document.getElementsByClassName("category-item");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            Slidechar++;
+            if (Slidechar > slides.length) {Slidechar = 1}
+            slides[Slidechar-1].style.display = "block";
+            setTimeout(Slider, 4000);
+          }
+
+          function Translate1(){
+            localStorage.setItem("link1", "Main");
+            document.getElementById("link1").innerHTML = localStorage.getItem("link1");
+            localStorage.setItem("link2", "About Us");
+            document.getElementById("link2").innerHTML = localStorage.getItem("link2");
+            localStorage.setItem("link3", "Gallery");
+            document.getElementById("link3").innerHTML = localStorage.getItem("link3");
+            localStorage.setItem("link4", "Contact Us");
+            document.getElementById("link4").innerHTML = localStorage.getItem("link4");
+            localStorage.setItem("link5", "My Cart");
+            document.getElementById("link5").innerHTML = localStorage.getItem("link5");
+            localStorage.setItem("link6", "Login");
+            document.getElementById("link6").innerHTML = localStorage.getItem("link6");
+            localStorage.setItem("link7", "Registration");
+            document.getElementById("link7").innerHTML = localStorage.getItem("link7");
+
+            localStorage.setItem("Mtavari1", "Bouquets");
+            document.getElementById("Mtavari1").innerHTML = localStorage.getItem("Mtavari1");
+            localStorage.setItem("Mtavari2", "Presents");
+            document.getElementById("Mtavari2").innerHTML = localStorage.getItem("Mtavari2");
+            localStorage.setItem("Mtavari3", "Compositions");
+            document.getElementById("Mtavari3").innerHTML = localStorage.getItem("Mtavari3");
+            localStorage.setItem("Mtavari4", "Wedding");
+            document.getElementById("Mtavari4").innerHTML = localStorage.getItem("Mtavari4");
+            localStorage.setItem("Mtavari5", "Blog");
+            document.getElementById("Mtavari5").innerHTML = localStorage.getItem("Mtavari5");
+            localStorage.setItem("Mtavari6", "Popular Items");
+            document.getElementById("Mtavari6").innerHTML = localStorage.getItem("Mtavari6");
+            localStorage.setItem("Mtavari7", "Roses In Two Colors");
+            document.getElementById("Mtavari7").innerHTML = localStorage.getItem("Mtavari7");
+            localStorage.setItem("Mtavari8", "Red and White Roses Quantity 35");
+            document.getElementById("Mtavari8").innerHTML = localStorage.getItem("Mtavari8");
+            localStorage.setItem("Mtavari9", "385GEL");
+            document.getElementById("Mtavari9").innerHTML = localStorage.getItem("Mtavari9");
+            localStorage.setItem("Mtavari10", "Buy");
+            document.getElementById("Mtavari10").innerHTML = localStorage.getItem("Mtavari10");
+            localStorage.setItem("Mtavari11", "Boquet of Round Roses");
+            document.getElementById("Mtavari11").innerHTML = localStorage.getItem("Mtavari11");
+            localStorage.setItem("Mtavari12", "Highest Quility Red Roses Boquet Quantity 60 Packaging: European Colorful Craft");
+            document.getElementById("Mtavari12").innerHTML = localStorage.getItem("Mtavari12");
+            localStorage.setItem("Mtavari13", "600GEL");
+            document.getElementById("Mtavari13").innerHTML = localStorage.getItem("Mtavari13");
+            localStorage.setItem("Mtavari14", "Buy");
+            document.getElementById("Mtavari14").innerHTML = localStorage.getItem("Mtavari14");
+            localStorage.setItem("Mtavari15", "Flower Mix In Heart");
+            document.getElementById("Mtavari15").innerHTML = localStorage.getItem("Mtavari15");
+            localStorage.setItem("Mtavari16", "Highest Quility Dutch Flower Mix In Branded Wooden Box In The Shape Of a Heart");
+            document.getElementById("Mtavari16").innerHTML = localStorage.getItem("Mtavari16");
+            localStorage.setItem("Mtavari17", "190GEL");
+            document.getElementById("Mtavari17").innerHTML = localStorage.getItem("Mtavari17");
+            localStorage.setItem("Mtavari18", "Buy");
+            document.getElementById("Mtavari18").innerHTML = localStorage.getItem("Mtavari18");
+            localStorage.setItem("Mtavari19", "Orchidea and Chrysanthemum");
+            document.getElementById("Mtavari19").innerHTML = localStorage.getItem("Mtavari19");
+            localStorage.setItem("Mtavari20", "Orchidea Composition With Roses and Chrysanthemus");
+            document.getElementById("Mtavari20").innerHTML = localStorage.getItem("Mtavari20");
+            localStorage.setItem("Mtavari21", "180GEL");
+            document.getElementById("Mtavari21").innerHTML = localStorage.getItem("Mtavari21");
+            localStorage.setItem("Mtavari22", "Buy");
+            document.getElementById("Mtavari22").innerHTML = localStorage.getItem("Mtavari22");
+            localStorage.setItem("Mtavari23", "Orchidea With Dutch Flowers");
+            document.getElementById("Mtavari23").innerHTML = localStorage.getItem("Mtavari23");
+            localStorage.setItem("Mtavari24", "Dutch Orchidea and Roses in Branded Wooden Box");
+            document.getElementById("Mtavari24").innerHTML = localStorage.getItem("Mtavari24");
+            localStorage.setItem("Mtavari25", "280GEL");
+            document.getElementById("Mtavari25").innerHTML = localStorage.getItem("Mtavari25");
+            localStorage.setItem("Mtavari26", "Buy");
+            document.getElementById("Mtavari26").innerHTML = localStorage.getItem("Mtavari26");
+            localStorage.setItem("Mtavari27", "Roses With Sweets");
+            document.getElementById("Mtavari27").innerHTML = localStorage.getItem("Mtavari27");
+            localStorage.setItem("Mtavari28", "“Ferrero Rocher”- Initial Written With the Chocolate");
+            document.getElementById("Mtavari28").innerHTML = localStorage.getItem("Mtavari28");
+            localStorage.setItem("Mtavari29", "408GEL");
+            document.getElementById("Mtavari29").innerHTML = localStorage.getItem("Mtavari29");
+            localStorage.setItem("Mtavari30", "Buy");
+            document.getElementById("Mtavari30").innerHTML = localStorage.getItem("Mtavari30");
+
+        }
+
+        function Translate2(){
+            localStorage.setItem("link1", "მთავარი");
+            document.getElementById("link1").innerHTML = localStorage.getItem("link1");
+            localStorage.setItem("link2", "ჩვენს შესახებ");
+            document.getElementById("link2").innerHTML = localStorage.getItem("link2");
+            localStorage.setItem("link3", "გალერეა");
+            document.getElementById("link3").innerHTML = localStorage.getItem("link3");
+            localStorage.setItem("link4", "კონტაქტი");
+            document.getElementById("link4").innerHTML = localStorage.getItem("link4");
+            localStorage.setItem("link5", "ჩემი კალათა");
+            document.getElementById("link5").innerHTML = localStorage.getItem("link5");
+            localStorage.setItem("link6", "ავტორიზაცია");
+            document.getElementById("link6").innerHTML = localStorage.getItem("link6");
+            localStorage.setItem("link7", "რეგისტრაცია");
+            document.getElementById("link7").innerHTML = localStorage.getItem("link7");
+
+            localStorage.setItem("Mtavari1", "თაიგულები");
+            document.getElementById("Mtavari1").innerHTML = localStorage.getItem("Mtavari1");
+            localStorage.setItem("Mtavari2", "სასაჩუქრე");
+            document.getElementById("Mtavari2").innerHTML = localStorage.getItem("Mtavari2");
+            localStorage.setItem("Mtavari3", "კომპოზიციები");
+            document.getElementById("Mtavari3").innerHTML = localStorage.getItem("Mtavari3");
+            localStorage.setItem("Mtavari4", "საქოწრილე");
+            document.getElementById("Mtavari4").innerHTML = localStorage.getItem("Mtavari4");
+            localStorage.setItem("Mtavari5", "ბლოგი");
+            document.getElementById("Mtavari5").innerHTML = localStorage.getItem("Mtavari5");
+            localStorage.setItem("Mtavari6", "პოპულარული პროდუქცია");
+            document.getElementById("Mtavari6").innerHTML = localStorage.getItem("Mtavari6");
+            localStorage.setItem("Mtavari7", "ვარდები ორ ფერში");
+            document.getElementById("Mtavari7").innerHTML = localStorage.getItem("Mtavari7");
+            localStorage.setItem("Mtavari8", "თეთრი და წითელი ვარდები რაოდენობა 35 ცალი");
+            document.getElementById("Mtavari8").innerHTML = localStorage.getItem("Mtavari8");
+            localStorage.setItem("Mtavari9", "385₾");
+            document.getElementById("Mtavari9").innerHTML = localStorage.getItem("Mtavari9");
+            localStorage.setItem("Mtavari10", "ყიდვა");
+            document.getElementById("Mtavari10").innerHTML = localStorage.getItem("Mtavari10");
+            localStorage.setItem("Mtavari11", "ვარდების მრგვალი თაიგული");
+            document.getElementById("Mtavari11").innerHTML = localStorage.getItem("Mtavari11");
+            localStorage.setItem("Mtavari12", "უმაღლესი ხარისხის წითელი ვარდების თაიგული რაოდენობა 60ცალი შეფუთვა: ევროპული ფერადი კრაფტი");
+            document.getElementById("Mtavari12").innerHTML = localStorage.getItem("Mtavari12");
+            localStorage.setItem("Mtavari13", "600₾");
+            document.getElementById("Mtavari13").innerHTML = localStorage.getItem("Mtavari13");
+            localStorage.setItem("Mtavari14", "ყიდვა");
+            document.getElementById("Mtavari14").innerHTML = localStorage.getItem("Mtavari14");
+            localStorage.setItem("Mtavari15", "ყვავილების მიქსი გულის ფორმაში");
+            document.getElementById("Mtavari15").innerHTML = localStorage.getItem("Mtavari15");
+            localStorage.setItem("Mtavari16", "საუკეთესო ხარისხის ჰოლანდიური ყვავილების მიქსი გულის ფორმის ხის ბრენდირებულ კოლოფში");
+            document.getElementById("Mtavari16").innerHTML = localStorage.getItem("Mtavari16");
+            localStorage.setItem("Mtavari17", "190₾");
+            document.getElementById("Mtavari17").innerHTML = localStorage.getItem("Mtavari17");
+            localStorage.setItem("Mtavari18", "ყიდვა");
+            document.getElementById("Mtavari18").innerHTML = localStorage.getItem("Mtavari18");
+            localStorage.setItem("Mtavari19", "ორქიდეა და ქრიზანთემა");
+            document.getElementById("Mtavari19").innerHTML = localStorage.getItem("Mtavari19");
+            localStorage.setItem("Mtavari20", "ორქიდეის კომპოზიცია ვარდებთან და ქრიზანთემებთან  ერთად");
+            document.getElementById("Mtavari20").innerHTML = localStorage.getItem("Mtavari20");
+            localStorage.setItem("Mtavari21", "180₾");
+            document.getElementById("Mtavari21").innerHTML = localStorage.getItem("Mtavari21");
+            localStorage.setItem("Mtavari22", "ყიდვა");
+            document.getElementById("Mtavari22").innerHTML = localStorage.getItem("Mtavari22");
+            localStorage.setItem("Mtavari23", "ორქიდეა ჰოლანდიური ვარდებით");
+            document.getElementById("Mtavari23").innerHTML = localStorage.getItem("Mtavari23");
+            localStorage.setItem("Mtavari24", "ჰოლანდიური ორქიდეა და ვარდები ხის ბრენდირებულ კოლოფში");
+            document.getElementById("Mtavari24").innerHTML = localStorage.getItem("Mtavari24");
+            localStorage.setItem("Mtavari25", "280₾");
+            document.getElementById("Mtavari25").innerHTML = localStorage.getItem("Mtavari25");
+            localStorage.setItem("Mtavari26", "ყიდვა");
+            document.getElementById("Mtavari26").innerHTML = localStorage.getItem("Mtavari26");
+            localStorage.setItem("Mtavari27", "ვარდები ტკბილეულით");
+            document.getElementById("Mtavari27").innerHTML = localStorage.getItem("Mtavari27");
+            localStorage.setItem("Mtavari28", "“Ferrero Rocher”- შოკოლადებით დაწერილი ინიციალი");
+            document.getElementById("Mtavari28").innerHTML = localStorage.getItem("Mtavari28");
+            localStorage.setItem("Mtavari29", "408₾");
+            document.getElementById("Mtavari29").innerHTML = localStorage.getItem("Mtavari29");
+            localStorage.setItem("Mtavari30", "ყიდვა");
+            document.getElementById("Mtavari30").innerHTML = localStorage.getItem("Mtavari30");
+        }
+
+
+
+
+
+          </script>
+
+    </body>
+</html>

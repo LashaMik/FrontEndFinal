@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lashas Flowers</title>
+    
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html" id="link1">მთავარი</a>
+        <a href="shesaxeb.html" id="link2">ჩვენს შესახებ</a>
+        <a href="galerea.html" id="link3">გალერეა</a>
+        <a href="kontakti.html" id="link4">კონტაქტი</a>
+        <a href="kalata.html" id="link5">ჩემი კალათა</a>
+        <a href="login.html" id="link6">ავტორიზაცია</a>
+        <a class="active" href="registracia.html" id="link7">რეგისტრაცია</a>
+        <button onclick="Translate1()">English</button>
+        <button onclick="Translate2()">Georgian</button> 
+    </div>
+    
+    <div class="reg-container">
+        <div id="email" class="reg-fields">
+            <input type="text" name="email" id="email1" placeholder="იმეილი. მაგ: example@gmail.com" required>
+            <div class="error" id="email-check"></div>
+        </div>
+        <br><br>
+        <div id="password" class="reg-fields">
+            <input type="password" name="password" id="password1" placeholder="პაროლი" required>
+            <div class="error" id="pass-check"></div>
+        </div>
+        <br><br>
+        <div id="rep-password" class="reg-fields">
+            <input type="password" name="rep-password" id="rep-password1" placeholder="გაიმეორეთ პაროლი" required>
+             <div class="error" id="rep-check"></div>
+        </div>
+        <br><br>
+        <div id="reg-date" class="reg-fields">
+            <input type="date" name="date" id="date" required>
+        </div>
+        <br><br>
+        <div id="username" class="reg-fields">
+            <input type="text" name="username" id="username1" placeholder="მომხმარებლის სახელი" required>
+            <div class="error" id="uname-check"></div>
+        </div>
+        <br><br>
+        <div id="qveyana" class="reg-fields">
+            <input type="text" name="qveyana" id="qveyana" placeholder="ქვეყანა" required>
+        </div>
+        <br><br>
+        <div id="qalaqi" class="reg-fields">
+            <input type="text" name="qalaqi" id="qalaqi"placeholder="ქალაქი" required>
+        </div>
+        <br><br>
+        <div id="mob-number" class="reg-fields">
+            <input type="number" name="mob-number" id="mob-number" placeholder="მობილურის ნომერი" required>
+        </div>
+        <br><br>
+        <button type="button" id="reg-submit" onclick="registration()">რეგისტრაცია</button>
+    </div>
+
+    <script type="text/javascript">
+
+        function validateEmail(email) {
+                var reEmail = /\S+@\S+\.\S+/; 
+                return reEmail.test(email);
+            }
+        function letterPass(pwd) //susti paroli
+        {
+            var rePass = /^[a-z]+$/; //regex
+            return rePass.test(pwd)
+        }
+        function letterNumPass(pwd) //paroli ricxvebit
+        {
+            var rePassNum = /^[a-z0-9]+$/;
+            return rePassNum.test(pwd);
+        }
+        function strongLetterNumPass(pwd) { //paroli didi patara da ricxvebit
+                var reStrongPassNum = /^[A-Za-z0-9]+$/;
+                return reStrongPassNum.test(pwd);
+            }
+        function specialLetterNumPass(pwd) { //paroli didi patara ricxvebit da special simboloebit
+                var reSpecial = /^[A-Za-z0-9#$!%&*^]+$/;
+                return reSpecial.test(pwd);
+            }
+        function registration() {
+                var email = document.getElementById("email1").value;
+                var uname = document.getElementById("username1").value;
+                var pwd = document.getElementById("password1").value; //password
+                var cpwd = document.getElementById("rep-password1").value; //confirm password
+
+                
+                var atpos = email.indexOf("@"),
+                dotpos = email.lastIndexOf(".");
+                if(!validateEmail(email))
+                {
+                    if(atpos < 1 || dotpos - atpos < 2)
+                    {
+                       document.getElementById("email-check").innerHTML = "იმეილში @ და/ან . ვერ იქნა ნაპოვნი";
+                    }
+                }
+                else{
+                    document.getElementById("email-check").innerHTML = "იმეილი სწორია";
+                }
+                if(!(pwd == cpwd))
+                {
+                    document.getElementById("pass-check").innerHTML = "შეყვანილი პაროლები არ ემთხვევა ერთმანეთს";
+                    document.getElementById("rep-check").innerHTML = "შეყვანილი პაროლები არ ემთხვევა ერთმანეთს";
+                }
+                else if(letterPass(pwd)){
+                    document.getElementById("pass-check").innerHTML = "პაროლის სიძლიერე: სუსტი";
+                }
+                else if(letterNumPass(pwd))
+                {
+                     document.getElementById("pass-check").innerHTML = "პაროლის სიძლიერე: საშუალო";
+                }
+                else if(strongLetterNumPass(pwd))
+                {
+                    document.getElementById("pass-check").innerHTML = "პაროლის სიძლიერე: ძლიერი";
+                }
+                else if (specialLetterNumPass(pwd)) {
+                    document.getElementById("pass-check").innerHTML = "პაროლის სიძლიერე: ძალიან ძლიერი";
+                }
+
+            }
+
+            
+          function Translate1(){
+            localStorage.setItem("link1", "Main");
+            document.getElementById("link1").innerHTML = localStorage.getItem("link1");
+            localStorage.setItem("link2", "About Us");
+            document.getElementById("link2").innerHTML = localStorage.getItem("link2");
+            localStorage.setItem("link3", "Gallery");
+            document.getElementById("link3").innerHTML = localStorage.getItem("link3");
+            localStorage.setItem("link4", "Contact Us");
+            document.getElementById("link4").innerHTML = localStorage.getItem("link4");
+            localStorage.setItem("link5", "My Cart");
+            document.getElementById("link5").innerHTML = localStorage.getItem("link5");
+            localStorage.setItem("link6", "Login");
+            document.getElementById("link6").innerHTML = localStorage.getItem("link6");
+            localStorage.setItem("link7", "Registration");
+            document.getElementById("link7").innerHTML = localStorage.getItem("link7");
+
+            document.getElementsByName('email')[0].placeholder = 'Email. e.g example@gmail.com';
+            document.getElementsByName('password')[0].placeholder = 'Password';
+            document.getElementsByName('rep-password')[0].placeholder = 'Repeat Password';
+            document.getElementsByName('username')[0].placeholder = 'Username';
+            document.getElementsByName('qveyana')[0].placeholder = 'Country';
+            document.getElementsByName('qalaqi')[0].placeholder = 'City';
+            document.getElementsByName('mob-number')[0].placeholder = 'Mobile Number';
+
+            localStorage.setItem("reg-submit", "Register");
+            document.getElementById("reg-submit").innerHTML = localStorage.getItem("reg-submit");
+
+
+
+          }
+          function Translate2(){
+            localStorage.setItem("link1", "მთავარი");
+            document.getElementById("link1").innerHTML = localStorage.getItem("link1");
+            localStorage.setItem("link2", "ჩვენს შესახებ");
+            document.getElementById("link2").innerHTML = localStorage.getItem("link2");
+            localStorage.setItem("link3", "გალერეა");
+            document.getElementById("link3").innerHTML = localStorage.getItem("link3");
+            localStorage.setItem("link4", "კონტაქტი");
+            document.getElementById("link4").innerHTML = localStorage.getItem("link4");
+            localStorage.setItem("link5", "ჩემი კალათა");
+            document.getElementById("link5").innerHTML = localStorage.getItem("link5");
+            localStorage.setItem("link6", "ავტორიზაცია");
+            document.getElementById("link6").innerHTML = localStorage.getItem("link6");
+            localStorage.setItem("link7", "რეგისტრაცია");
+            document.getElementById("link7").innerHTML = localStorage.getItem("link7");
+
+
+            document.getElementsByName('email')[0].placeholder = 'იმეილი. მაგ: example@gmail.com';
+            document.getElementsByName('password')[0].placeholder = 'პაროლი';
+            document.getElementsByName('rep-password')[0].placeholder = 'გაიმეორეთ პაროლი';
+            document.getElementsByName('username')[0].placeholder = 'მომხმარებლის სახელი';
+            document.getElementsByName('qveyana')[0].placeholder = 'ქვეყანა';
+            document.getElementsByName('qalaqi')[0].placeholder = 'ქალაქი';
+            document.getElementsByName('mob-number')[0].placeholder = 'მობილურის ნომერი';
+
+            localStorage.setItem("reg-submit", "რეგისტრაცია");
+            document.getElementById("reg-submit").innerHTML = localStorage.getItem("reg-submit");
+          }
+
+
+
+    </script>
+</body>
+</html>

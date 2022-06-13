@@ -1,0 +1,150 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lashas Flowers</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+      <div class="topnav">
+        <a href="index.html" id="link1">მთავარი</a>
+        <a href="shesaxeb.html" id="link2">ჩვენს შესახებ</a>
+        <a href="galerea.html" id="link3">გალერეა</a>
+        <a class="active" href="kontakti.html" id="link4">კონტაქტი</a>
+        <a href="kalata.html" id="link5">ჩემი კალათა</a>
+        <a href="login.html" id="link6">ავტორიზაცია</a>
+        <a href="registracia.html" id="link7">რეგისტრაცია</a>
+        <button onclick="Translate1()">English</button>
+        <button onclick="Translate2()">Georgian</button> 
+      </div>
+        <section class="shesaxeb">
+            <div
+                class="shesaxeb_foto"
+                style="
+                    background-image: url('img/shesaxeb.jpg');
+                "
+            >
+                <div class="shesaxeb_satauri">
+                    <div id="Kontakti1">
+                        დაგვიკავშირდით
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <form>
+          
+              <label for="fname" id="Kontakti2">სახელი</label>
+              <input type="text" name="Kontakti3" placeholder="თქვენი სახელი..">
+          
+              <label for="lname" id="Kontakti4">გვარი</label>
+              <input type="text" name="Kontakti5" placeholder="თქვენი გვარი..">
+                 
+              <label for="subject" id="Kontakti6">თემა</label>
+              <textarea id="subject" name="Kontakti7" placeholder="შეიყვანეთ ტექსტი" style="height:150px"></textarea>
+          
+              <input type="submit" name="Kontakti8" value="გაგზავნა">
+          
+            </form>
+          </div>
+
+          <script>
+
+            function Translate1(){
+            localStorage.setItem("link1", "Main");
+            document.getElementById("link1").innerHTML = localStorage.getItem("link1");
+            localStorage.setItem("link2", "About Us");
+            document.getElementById("link2").innerHTML = localStorage.getItem("link2");
+            localStorage.setItem("link3", "Gallery");
+            document.getElementById("link3").innerHTML = localStorage.getItem("link3");
+            localStorage.setItem("link4", "Contact Us");
+            document.getElementById("link4").innerHTML = localStorage.getItem("link4");
+            localStorage.setItem("link5", "My Cart");
+            document.getElementById("link5").innerHTML = localStorage.getItem("link5");
+            localStorage.setItem("link6", "Login");
+            document.getElementById("link6").innerHTML = localStorage.getItem("link6");
+            localStorage.setItem("link7", "Registration");
+            document.getElementById("link7").innerHTML = localStorage.getItem("link7");
+
+            localStorage.setItem("Kontakti1", "Contact Us");
+            document.getElementById("Kontakti1").innerHTML = localStorage.getItem("Kontakti1");
+            localStorage.setItem("Kontakti2", "Name");
+            document.getElementById("Kontakti2").innerHTML = localStorage.getItem("Kontakti2");
+
+            document.getElementsByName('Kontakti3')[0].placeholder = 'Your Name';
+
+            localStorage.setItem("Kontakti4", "Lastname");
+            document.getElementById("Kontakti4").innerHTML = localStorage.getItem("Kontakti4");
+
+            document.getElementsByName('Kontakti5')[0].placeholder = 'Your Last Name';
+
+            localStorage.setItem("Kontakti6", "Subject");
+            document.getElementById("Kontakti6").innerHTML = localStorage.getItem("Kontakti6");
+
+            document.getElementsByName('Kontakti7')[0].placeholder = 'Enter Text';
+
+            document.getElementsByName('Kontakti8')[0].value = 'Send';
+
+
+
+
+            
+
+            }
+
+            function Translate2(){
+            localStorage.setItem("link1", "მთავარი");
+            document.getElementById("link1").innerHTML = localStorage.getItem("link1");
+            localStorage.setItem("link2", "ჩვენს შესახებ");
+            document.getElementById("link2").innerHTML = localStorage.getItem("link2");
+            localStorage.setItem("link3", "გალერეა");
+            document.getElementById("link3").innerHTML = localStorage.getItem("link3");
+            localStorage.setItem("link4", "კონტაქტი");
+            document.getElementById("link4").innerHTML = localStorage.getItem("link4");
+            localStorage.setItem("link5", "ჩემი კალათა");
+            document.getElementById("link5").innerHTML = localStorage.getItem("link5");
+            localStorage.setItem("link6", "ავტორიზაცია");
+            document.getElementById("link6").innerHTML = localStorage.getItem("link6");
+            localStorage.setItem("link7", "რეგისტრაცია");
+            document.getElementById("link7").innerHTML = localStorage.getItem("link7");
+
+            localStorage.setItem("Kontakti1", "დაგვიკავშირდით");
+            document.getElementById("Kontakti1").innerHTML = localStorage.getItem("Kontakti1");
+            localStorage.setItem("Kontakti2", "სახელი");
+            document.getElementById("Kontakti2").innerHTML = localStorage.getItem("Kontakti2");
+
+            document.getElementsByName('Kontakti3')[0].placeholder = 'თქვენი სახელი..';
+
+            localStorage.setItem("Kontakti4", "გვარი");
+            document.getElementById("Kontakti4").innerHTML = localStorage.getItem("Kontakti4");
+
+            document.getElementsByName('Kontakti5')[0].placeholder = 'თქვენი გვარი..';
+
+            localStorage.setItem("Kontakti6", "თემა");
+            document.getElementById("Kontakti6").innerHTML = localStorage.getItem("Kontakti6");
+
+            document.getElementsByName('Kontakti7')[0].placeholder = 'შეიყვანეთ ტექსტი';
+
+
+            document.getElementsByName('Kontakti8')[0].value = 'გაგზავნა';
+
+
+
+
+
+            }
+
+
+
+
+
+          </script>
+
+
+
+
+
+
+    </body>
+</html>

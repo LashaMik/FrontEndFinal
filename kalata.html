@@ -1,0 +1,203 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lashas Flowers</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+      <div class="topnav">
+        <a href="index.html" id="link1">მთავარი</a>
+        <a href="shesaxeb.html" id="link2">ჩვენს შესახებ</a>
+        <a href="galerea.html" id="link3">გალერეა</a>
+        <a href="kontakti.html" id="link4">კონტაქტი</a>
+        <a class="active" href="kalata.html" id="link5">ჩემი კალათა</a>
+        <a href="login.html" id="link6">ავტორიზაცია</a>
+        <a href="registracia.html" id="link7">რეგისტრაცია</a>
+        <button onclick="Translate1()">English</button>
+        <button onclick="Translate2()">Georgian</button> 
+      </div>
+      <section id="shop-cart">
+      <div class="shopping-cart">
+
+        <div class="column-labels">
+          <label class="product-image"id="Kalata1">ფოტო</label>
+          <label class="product-details"id="Kalata2">პროდუქცია</label>
+          <label class="product-price"id="Kalata3">ფასი</label>
+          <label class="product-quantity"id="Kalata4">რაოდენობა</label>
+          <label class="product-removal"id="Kalata5">წაშლა</label>
+          <label class="product-line-price"id="Kalata6">ჯამში</label>
+        </div>
+      
+        <div class="product">
+          <div class="product-image">
+            <img src="./img/produkcia/1.jpg">
+          </div>
+          <div class="product-details">
+            <div class="product-title" id="Kalata7">ვარდები ორ ფერში</div>
+            <p class="product-description"id="Kalata8">თეთრი და წითელი ვარდები რაოდენობა 35 ცალი</p>
+          </div>
+          <div class="product-price"id="Kalata9">385₾</div>
+          <div class="product-quantity">
+            <input type="number" value="2" min="1">
+          </div>
+          <div class="product-removal">
+            <button class="remove-product" id="Kalata10">
+             წაშლა
+            </button>
+          </div>
+          <div class="product-line-price"id="Kalata11">385₾</div>
+        </div>
+      
+        <div class="product">
+          <div class="product-image">
+            <img src=./img/produkcia/2.jpg>
+          </div>
+          <div class="product-details">
+            <div class="product-title"id="Kalata12">ვარდების მრგვალი თაიგული</div>
+            <p class="product-description"id="Kalata13">უმაღლესი ხარისხის წითელი ვარდების თაიგული რაოდენობა 60ცალი შეფუთვა: ევროპული ფერადი კრაფტი</p>
+          </div>
+          <div class="product-price"id="Kalata14">600₾</div>
+          <div class="product-quantity">
+            <input type="number" value="1" min="1">
+          </div>
+          <div class="product-removal">
+            <button class="remove-product"id="Kalata15">
+              წაშლა
+            </button>
+          </div>
+          <div class="product-line-price"id="Kalata16">600₾</div>
+        </div>
+      
+        <div class="totals">
+          <div class="totals-item totals-item-total">
+            <label id="Kalata17">ჯამში</label>
+            <div class="totals-value" id="Kalata18">985₾</div>
+          </div>
+        </div>
+            
+            <button class="checkout" id="Kalata19">გადახდა</button>
+      
+      </div>
+    </section>
+
+
+    <script>
+            function Translate1(){
+            localStorage.setItem("link1", "Main");
+            document.getElementById("link1").innerHTML = localStorage.getItem("link1");
+            localStorage.setItem("link2", "About Us");
+            document.getElementById("link2").innerHTML = localStorage.getItem("link2");
+            localStorage.setItem("link3", "Gallery");
+            document.getElementById("link3").innerHTML = localStorage.getItem("link3");
+            localStorage.setItem("link4", "Contact Us");
+            document.getElementById("link4").innerHTML = localStorage.getItem("link4");
+            localStorage.setItem("link5", "My Cart");
+            document.getElementById("link5").innerHTML = localStorage.getItem("link5");
+            localStorage.setItem("link6", "Login");
+            document.getElementById("link6").innerHTML = localStorage.getItem("link6");
+            localStorage.setItem("link7", "Registration");
+            document.getElementById("link7").innerHTML = localStorage.getItem("link7");
+
+            localStorage.setItem("Kalata19", "Checkout");
+            document.getElementById("Kalata19").innerHTML = localStorage.getItem("Kalata19");
+            localStorage.setItem("Kalata1", "Photo");
+            document.getElementById("Kalata1").innerHTML = localStorage.getItem("Kalata1");
+            localStorage.setItem("Kalata2", "Production");
+            document.getElementById("Kalata2").innerHTML = localStorage.getItem("Kalata2");
+            localStorage.setItem("Kalata3", "Price");
+            document.getElementById("Kalata3").innerHTML = localStorage.getItem("Kalata3");
+            localStorage.setItem("Kalata4", "Quintity");
+            document.getElementById("Kalata4").innerHTML = localStorage.getItem("Kalata4");
+            localStorage.setItem("Kalata5", "Delete");
+            document.getElementById("Kalata5").innerHTML = localStorage.getItem("Kalata5");
+            localStorage.setItem("Kalata6", "Sum");
+            document.getElementById("Kalata6").innerHTML = localStorage.getItem("Kalata6");
+            localStorage.setItem("Kalata7", "Roses in Two Colors");
+            document.getElementById("Kalata7").innerHTML = localStorage.getItem("Kalata7");
+            localStorage.setItem("Kalata8", "White and Red roses Quintity 35");
+            document.getElementById("Kalata8").innerHTML = localStorage.getItem("Kalata8");
+            localStorage.setItem("Kalata9", "385GEL");
+            document.getElementById("Kalata9").innerHTML = localStorage.getItem("Kalata9");
+            localStorage.setItem("Kalata10", "Delete");
+            document.getElementById("Kalata10").innerHTML = localStorage.getItem("Kalata10");
+            localStorage.setItem("Kalata11", "385GEL");
+            document.getElementById("Kalata11").innerHTML = localStorage.getItem("Kalata11");
+            localStorage.setItem("Kalata12", "Round Rose Boquet");
+            document.getElementById("Kalata12").innerHTML = localStorage.getItem("Kalata12");
+            localStorage.setItem("Kalata13", "Highest Quility Red Roses Boquet Quantity 60 Packaging: European Colorful Craft");
+            document.getElementById("Kalata13").innerHTML = localStorage.getItem("Kalata13");
+            localStorage.setItem("Kalata14", "600GEL");
+            document.getElementById("Kalata14").innerHTML = localStorage.getItem("Kalata14");
+            localStorage.setItem("Kalata15", "Delete");
+            document.getElementById("Kalata15").innerHTML = localStorage.getItem("Kalata15");
+            localStorage.setItem("Kalata16", "600GEL");
+            document.getElementById("Kalata16").innerHTML = localStorage.getItem("Kalata16");
+            localStorage.setItem("Kalata18", "985GEL");
+            document.getElementById("Kalata18").innerHTML = localStorage.getItem("Kalata18");
+            localStorage.setItem("Kalata17", "Sum");
+            document.getElementById("Kalata17").innerHTML = localStorage.getItem("Kalata17");
+
+
+
+
+            }
+            function Translate2(){
+            localStorage.setItem("link1", "მთავარი");
+            document.getElementById("link1").innerHTML = localStorage.getItem("link1");
+            localStorage.setItem("link2", "ჩვენს შესახებ");
+            document.getElementById("link2").innerHTML = localStorage.getItem("link2");
+            localStorage.setItem("link3", "გალერეა");
+            document.getElementById("link3").innerHTML = localStorage.getItem("link3");
+            localStorage.setItem("link4", "კონტაქტი");
+            document.getElementById("link4").innerHTML = localStorage.getItem("link4");
+            localStorage.setItem("link5", "ჩემი კალათა");
+            document.getElementById("link5").innerHTML = localStorage.getItem("link5");
+            localStorage.setItem("link6", "ავტორიზაცია");
+            document.getElementById("link6").innerHTML = localStorage.getItem("link6");
+            localStorage.setItem("link7", "რეგისტრაცია");
+            document.getElementById("link7").innerHTML = localStorage.getItem("link7");
+
+
+            localStorage.setItem("Kalata19", "გადახდა");
+            document.getElementById("Kalata19").innerHTML = localStorage.getItem("Kalata19");
+            localStorage.setItem("Kalata1", "ფოტო");
+            document.getElementById("Kalata1").innerHTML = localStorage.getItem("Kalata1");
+            localStorage.setItem("Kalata2", "პროდუქცია");
+            document.getElementById("Kalata2").innerHTML = localStorage.getItem("Kalata2");
+            localStorage.setItem("Kalata3", "ფასი");
+            document.getElementById("Kalata3").innerHTML = localStorage.getItem("Kalata3");
+            localStorage.setItem("Kalata4", "რაოდენობა");
+            document.getElementById("Kalata4").innerHTML = localStorage.getItem("Kalata4");
+            localStorage.setItem("Kalata5", "წაშლა");
+            document.getElementById("Kalata5").innerHTML = localStorage.getItem("Kalata5");
+            localStorage.setItem("Kalata6", "ჯამი");
+            document.getElementById("Kalata6").innerHTML = localStorage.getItem("Kalata6");
+            localStorage.setItem("Kalata7", "ვარდები ორ ფერში");
+            document.getElementById("Kalata7").innerHTML = localStorage.getItem("Kalata7");
+            localStorage.setItem("Kalata8", "თეთრი და წითელი ვარდები რაოდენობა 35 ცალი");
+            document.getElementById("Kalata8").innerHTML = localStorage.getItem("Kalata8");
+            localStorage.setItem("Kalata9", "385₾");
+            document.getElementById("Kalata9").innerHTML = localStorage.getItem("Kalata9");
+            localStorage.setItem("Kalata10", "წაშლა");
+            document.getElementById("Kalata10").innerHTML = localStorage.getItem("Kalata10");
+            localStorage.setItem("Kalata11", "385₾");
+            document.getElementById("Kalata11").innerHTML = localStorage.getItem("Kalata11");
+            localStorage.setItem("Kalata12", "ვარდების მრგვალი თაიგული");
+            document.getElementById("Kalata12").innerHTML = localStorage.getItem("Kalata12");
+            localStorage.setItem("Kalata13", "უმაღლესი ხარისხის წითელი ვარდების თაიგული რაოდენობა 60ცალი შეფუთვა: ევროპული ფერადი კრაფტი");
+            document.getElementById("Kalata13").innerHTML = localStorage.getItem("Kalata13");
+            localStorage.setItem("Kalata14", "600₾");
+            document.getElementById("Kalata14").innerHTML = localStorage.getItem("Kalata14");
+            localStorage.setItem("Kalata15", "წაშლა");
+            document.getElementById("Kalata15").innerHTML = localStorage.getItem("Kalata15");
+            localStorage.setItem("Kalata16", "600₾");
+            document.getElementById("Kalata16").innerHTML = localStorage.getItem("Kalata16");
+            localStorage.setItem("Kalata18", "985₾");
+            document.getElementById("Kalata18").innerHTML = localStorage.getItem("Kalata18");
+            localStorage.setItem("Kalata17", "ჯამში");
+            document.getElementById("Kalata17").innerHTML = localStorage.getItem("Kalata17");
+            }
+    </script>    
+    </body>
+</html>
